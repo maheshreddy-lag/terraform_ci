@@ -2,7 +2,7 @@
   hosts: frontend
   become: true
   vars:
-    nginx_backend_ip: $BACKEND_IP  # Define the backend IP here
+    nginx_backend_ip: "50.16.105.77"  # Define the backend IP here
   tasks:
     - name: Disable SELinux (if applicable)
       command: echo "SELinux not applicable on Amazon Linux"
